@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+<<<<<<< HEAD
 
     def index
       # provide a list of authors to the view for the filter control
@@ -19,6 +20,12 @@ class PostsController < ApplicationController
       end
     end
   
+=======
+helper_method :params
+  def index
+    @posts = Post.all
+  end
+>>>>>>> b222ba35b0e8babc48763de97c511356a2fd78af
 
   def show
     @post = Post.find(params[:id])
